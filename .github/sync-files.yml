@@ -1,0 +1,143 @@
+group:
+  # JavaScript files
+  - files:
+      - source: sync-files/js/.github/
+        dest: .github/
+        exclude: |
+          workflows/bundlewatch.yml
+          bundlewatch.config.json
+      - source: sync-files/js/.eslintignore
+        dest: .eslintignore
+      - source: sync-files/js/.eslintrc.json
+        dest: .eslintrc.json
+      - source: sync-files/js/.releaserc
+        dest: .releaserc
+    repos: |
+      googlemaps/js-api-loader
+      googlemaps/js-jest-mocks
+      googlemaps/js-markerclusterer
+      googlemaps/js-markermanager
+      googlemaps/js-markerwithlabel
+      googlemaps/js-ogc
+      googlemaps/js-polyline-codec
+      googlemaps/js-github-policy-bot
+      googlemaps/js-three
+      googlemaps/js-url-signature
+      googlemaps/react-wrapper
+  # Browser only JavaScript files
+  - files:
+      - source: sync-files/js/.github/
+        dest: .github/
+      - source: sync-files/js/.babelrc
+        dest: .babelrc
+    repos: |
+      googlemaps/js-api-loader
+      googlemaps/js-markerclusterer
+      googlemaps/js-markermanager
+      googlemaps/js-markerwithlabel
+      googlemaps/js-ogc
+      googlemaps/js-polyline-codec
+      googlemaps/js-three
+      googlemaps/js-url-signature
+  # All repositories
+  - files:
+      - source: .github/CODEOWNERS
+        dest: .github/CODEOWNERS
+        replace: false
+      - source: .github/sync-repo-settings.yaml
+        dest: .github/sync-repo-settings.yaml
+        replace: false
+      - source: SECURITY.md
+        dest: SECURITY.md
+        replace: false
+      - source: .github/workflows/dependabot.yml
+        dest: .github/workflows/dependabot.yml
+    # gh repo list googlemaps --public --source --no-archived  --json name -L 100  | jq '.[] | .name' | sort | xargs -n 1 -I{} echo "googlemaps/{}"
+    # excluding googlemaps/.github, googlemaps/on-demand-rides-deliveries-samples
+    repos: |
+      googlemaps/android-maps-compose
+      googlemaps/android-maps-ktx
+      googlemaps/android-maps-rx
+      googlemaps/android-maps-utils
+      googlemaps/android-on-demand-rides-deliveries-samples
+      googlemaps/android-places-demos
+      googlemaps/android-places-ktx
+      googlemaps/android-samples
+      googlemaps/android-v3-migration
+      googlemaps/angular-on-demand-rides-deliveries-samples
+      googlemaps/codelab-maps-platform-101-swift
+      googlemaps/codelab-places-101-android-kotlin
+      googlemaps/eslint-plugin-googlemaps
+      googlemaps/fleet-debugger
+      googlemaps/google-maps-ios-utils
+      googlemaps/google-maps-services-go
+      googlemaps/google-maps-services-java
+      googlemaps/google-maps-services-js
+      googlemaps/google-maps-services-python
+      googlemaps/ios-combine
+      googlemaps/ios-on-demand-rides-deliveries-samples
+      googlemaps/java-fleetengine-auth
+      googlemaps/java-on-demand-rides-deliveries-stub-provider
+      googlemaps/js-api-loader
+      googlemaps/js-github-policy-bot
+      googlemaps/js-jest-mocks
+      googlemaps/js-markerclusterer
+      googlemaps/js-markermanager
+      googlemaps/js-markerwithlabel
+      googlemaps/js-ogc
+      googlemaps/js-polyline-codec
+      googlemaps/js-samples
+      googlemaps/js-three
+      googlemaps/js-types
+      googlemaps/js-typescript-guards
+      googlemaps/js-url-signature
+      googlemaps/last-mile-fleet-solution-samples
+      googlemaps/maps-sdk-for-ios-samples
+      googlemaps/openapi-specification
+      googlemaps/react-routing-playground
+      googlemaps/react-wrapper
+      googlemaps/semantic-release-config
+      googlemaps/url-signing
+  # Android Library files (Groovy)
+  - files:
+      - source: sync-files/android/.github/
+        dest: .github/
+      - source: sync-files/android/.lib_releaserc_groovy
+        dest: .releaserc
+    repos: |
+      googlemaps/android-maps-compose
+      googlemaps/android-maps-ktx
+      googlemaps/android-maps-utils
+      googlemaps/android-places-ktx
+  # Android Library files (KTS)
+  - files:
+      - source: sync-files/android/.github/
+        dest: .github/
+      - source: sync-files/android/.lib_releaserc_kts
+        dest: .releaserc
+    repos: |
+      googlemaps/android-maps-rx
+  # Android Plugins
+  - files:
+      - source: sync-files/android/.github/
+        dest: .github/
+        exclude: |
+          workflows/release.yml
+      - source: sync-files/android/.plugin_releaserc
+        dest: .releaserc
+    repos: |
+      googlemaps/android-v3-migration
+  # Java Libraries
+  - files:
+      - source: sync-files/java/.github/
+        dest: .github/
+    repos: |
+      googlemaps/google-maps-services-java
+      googlemaps/java-fleetengine-auth
+  # @googlemaps/eng owned
+  - files:
+      - source: sync-files/eng/.github/CODEOWNERS
+        dest: .github/CODEOWNERS
+    repos: |
+      googlemaps/fleet-debugger
+      googlemaps/java-fleetengine-auth
