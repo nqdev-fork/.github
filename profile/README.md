@@ -1,6 +1,24 @@
 
 <h1 align="center">Hello everybody 👋, I'm Nguyễn Quý</h1>
 
+<p align="center">
+  <a target="_blank" href="https://github.com/nguyenquy0710/nguyenquy0710">
+    <img src="https://img.shields.io/github/stars/nguyenquy0710/nguyenquy0710" />
+  </a>
+  <!--<a target="_blank" href="https://hub.docker.com/r/nguyenquy0710/nguyenquy0710">
+    <img src="https://img.shields.io/docker/pulls/nguyenquy0710/nguyenquy0710" />
+  </a>-->
+  <!--<a target="_blank" href="https://hub.docker.com/r/nguyenquy0710/nguyenquy0710">
+    <img src="https://img.shields.io/docker/v/nguyenquy0710/nguyenquy0710/latest?label=docker%20image%20ver." />
+  </a>-->
+  <a target="_blank" href="https://github.com/nguyenquy0710/nguyenquy0710">
+    <img src="https://img.shields.io/github/last-commit/nguyenquy0710/nguyenquy0710" />
+  </a>
+  <a target="_blank" href="https://opencollective.com/uptime-kuma">
+    <img src="https://opencollective.com/uptime-kuma/total/badge.svg?label=Open%20Collective%20Backers&color=brightgreen" />
+  </a>
+</p>
+
 <p align="center" style="margin-bottom: 20px">
 	<img src="https://github-readme-stats.vercel.app/api?username=nguyenquy0710&show_icons=true&theme=radical"></img>
 </p>
