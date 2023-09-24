@@ -31,3 +31,6 @@
 	<img src="https://github-readme-stats.vercel.app/api/pin/?username=nguyenquy0710&repo=gitbook.dotnet-basic"/>
 	<img src="https://github-readme-stats.vercel.app/api/pin/?username=nguyenquy0710&repo=gitbook.sql-basic"/>
 </p>
+<p align="center" style="margin-bottom: 20px">
+	<img src="https://github-readme-stats.vercel.app/api/pin/?username=nqdev-fork&repo=ripienaar-free-for-dev"/>
+</p>
